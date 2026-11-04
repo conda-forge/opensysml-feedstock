@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.11.0"
+  version: "0.12.0"
   summary: Open Source SysML v2 Implementation in Go
   # platform
   export: ${{ "export" if unix else "set" }}
@@ -44,7 +44,7 @@ recipe:
 
 source:
   url: https://${{ go_mod }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 828dd78a42ce447ad54fc60cbc0b3c71509c02b21e9ddbb5c807394453a3b539
+  sha256: 55b80496b5a798917657255a02612a04b0e0a5cdd4050f0858033883b63f7145
   target_directory: ${{ go_mod }}
   patches:
     - 0000-conda-sysml-grpc-path.patch
